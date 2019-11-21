@@ -1,10 +1,10 @@
 import React from 'react';
-import ReactDOM from "react-dom";
+import styles from './app.module.scss'
 
 
 function App () {
     return (
-        <div>React</div>
+        <div className={styles.hello}>React</div>
     )
 }
 
