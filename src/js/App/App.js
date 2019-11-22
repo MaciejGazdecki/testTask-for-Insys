@@ -1,10 +1,20 @@
 import React from 'react';
-import styles from './app.module.scss'
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
+import styles from './app.module.scss';
+import Header from "../Components/Header/header";
+import Navigation from "../Components/Navigation/navigation";
 
 
 function App () {
     return (
-        <div className={styles.hello}>React</div>
+            <Router>
+                <Switch>
+                    <>
+                        <Header/>
+                        <Navigation/>
+                    </>
+                </Switch>
+            </Router>
     )
 }
 
