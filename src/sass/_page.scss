@@ -16,3 +16,23 @@
     width: 1400px;
   }
 }
+@mixin welcome-notFound-layout {
+  margin-top: 50%;
+  @include only-mobiles-landscape-m {
+    margin-top: 5%;
+  }
+  @include only-mobiles-landscape-l {
+    margin-top: 5%;
+  }
+  @include media-tablet {
+    font-size: 3rem;
+    margin-top: 30%;
+  }
+  @include iPhonexAndPixel2XL-landscape {
+    margin-top: 5%;
+  }
+  @include all-big-screens {
+    font-size: 4rem;
+    margin-top: 5%;
+  }
+}
