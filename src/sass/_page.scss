@@ -1,0 +1,5 @@
+//layout
+@mixin container {
+  margin: 0 3%;
+  @content
+}
