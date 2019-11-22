@@ -1,0 +1,12 @@
+@import "../../../sass/page";
+@import "../../../sass/mixins";
+@import "../../../sass/variables";
+
+.container {
+  @include container;
+  display: flex;
+  justify-content: center;
+}
+.notFound {
+  @include welcome-notFound-layout;
+}

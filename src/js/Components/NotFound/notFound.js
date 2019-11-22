@@ -3,9 +3,11 @@ import styles from './notFound.module.scss'
 
 function NotFound() {
     return (
-        <div>
-            not found
-        </div>
+        <section>
+            <div className={styles.container}>
+                <h3 className={styles.notFound}>Nie odnaleziono strony</h3>
+            </div>
+        </section>
     )
 }
 
