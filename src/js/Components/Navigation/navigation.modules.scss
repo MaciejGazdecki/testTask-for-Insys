@@ -1,0 +1,108 @@
+@import "../../../sass/page";
+@import "../../../sass/mixins";
+@import "../../../sass/variables";
+
+
+.navigation {
+  width: 100%;
+  background-color: #7AD6BB;
+  height: 45px;
+  @include all-mobiles-m {
+    height: 60px;
+  }
+  @include all-mobiles-l {
+    height: 60px;
+  }
+  @include only-mobiles-landscape-m {
+    height: 50px;
+  }
+  @include only-mobiles-landscape-l {
+    height: 50px;
+  }
+  @include media-tablet {
+     height: 80px;
+  }
+  @include iPhonexAndPixel2XL-landscape {
+    height: 60px;
+  }
+  @include all-big-screens {
+    height: 80px;
+  }
+  .container {
+    @include container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    li {
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+    i {
+      font-size: 2rem;
+      color: #FFFFFF;
+      @include all-mobiles-m {
+        font-size: 2.2rem;
+      }
+      @include all-mobiles-l {
+        font-size: 2.3rem;
+      }
+      @include media-tablet {
+        font-size: 3rem;
+      }
+      @include iPhonexAndPixel2XL-landscape {
+        font-size: 2.4rem;
+      }
+      @include all-big-screens {
+        font-size: 3.3rem;
+      }
+    }
+  }
+
+}
+.avatar {
+  background-image: url("../../../images/11036519273_833bb47758_q.jpg");
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  border: 7px solid rgba(255,255,255,0.85);
+  transform: translateY(-42%);
+  @include all-mobiles-m {
+    transform: translateY(-45%);
+    width: 130px;
+    height: 130px;
+  }
+  @include all-mobiles-l {
+    transform: translateY(-45%);
+    width: 130px;
+    height: 130px;
+  }
+  @include only-mobiles-landscape-m {
+    transform: translateY(-55%);
+  }
+  @include only-mobiles-landscape-l {
+    transform: translateY(-55%);
+  }
+  @include media-tablet {
+    width: 160px;
+    height: 160px;
+  }
+  @include iPhonexAndPixel2XL-landscape {
+    width: 130px;
+    height: 130px;
+  }
+  @include all-big-screens {
+    transform: translateY(-55%);
+    width: 200px;
+    height: 200px;
+  }
+}
+
