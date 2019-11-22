@@ -1,0 +1,43 @@
+@import "../../../sass/page";
+@import "../../../sass/mixins";
+@import "../../../sass/variables";
+
+.container {
+  @include container;
+  height: 600px;
+  @include only-mobiles-landscape-m {
+    height: 400px;
+  }
+  @include only-mobiles-landscape-l {
+    height: 400px;
+  }
+}
+.wrapper {
+  margin-top: 25px;
+  .name {
+    h3 {
+      font-weight: bold;
+    }
+  }
+  .content {
+    margin-top: 25px;
+    p + p {
+      margin-top: 30px;
+    }
+    p {
+      &:nth-child(2) {
+        font-style: italic;
+        font-size: 1.3rem;
+        color: #999999;
+        border-left: 5px solid $navColor;
+        margin-left: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        span {
+          font-family: 'Cormorant Garamond', serif;
+        }
+      }
+    }
+  }
+}

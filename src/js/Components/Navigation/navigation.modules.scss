@@ -5,7 +5,7 @@
 
 .navigation {
   width: 100%;
-  background-color: #7AD6BB;
+  background-color: $navColor;
   height: 45px;
   @include all-mobiles-m {
     height: 60px;

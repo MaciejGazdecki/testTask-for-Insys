@@ -2,7 +2,7 @@
 
 //layout
 @mixin container {
-  margin: 0 3%;
+  margin: 0 5%;
   @include media-desktop {
     margin: 0 auto;
     width: 960px;
@@ -17,12 +17,21 @@
   }
 }
 @mixin welcome-notFound-layout {
+  font-size: 1.7rem;
   margin-top: 50%;
+  @include all-mobiles-m {
+    font-size: 2rem;
+  }
+  @include all-mobiles-m {
+    font-size: 2rem;
+  }
   @include only-mobiles-landscape-m {
     margin-top: 5%;
+    font-size: 2.5rem;
   }
   @include only-mobiles-landscape-l {
     margin-top: 5%;
+    font-size: 2.5rem;
   }
   @include media-tablet {
     font-size: 3rem;
