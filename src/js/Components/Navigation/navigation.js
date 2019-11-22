@@ -9,7 +9,7 @@ function Navigation() {
                 <div className={styles.avatar}></div>
                 <ul className={styles.menu}>
                     <li>
-                        <NavLink to="/">
+                        <NavLink  to="/profile">
                             <i className="far fa-user-circle"></i>
                         </NavLink>
                     </li>
