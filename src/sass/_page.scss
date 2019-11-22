@@ -1,5 +1,18 @@
+@import "mixins";
+
 //layout
 @mixin container {
   margin: 0 3%;
-  @content
+  @include media-desktop {
+    margin: 0 auto;
+    width: 960px;
+  }
+  @include media-desktop-1680px {
+    margin: 0 auto;
+    width: 1200px;
+  }
+  @include media-desktop-big {
+    margin: 0 auto;
+    width: 1400px;
+  }
 }

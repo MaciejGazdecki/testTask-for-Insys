@@ -9,13 +9,10 @@ function App () {
     return (
             <Router>
                 <Switch>
-                    <div>
+                    <>
                         <Header/>
                         <Navigation/>
-                            <div>
-
-                            </div>
-                    </div>
+                    </>
                 </Switch>
             </Router>
     )

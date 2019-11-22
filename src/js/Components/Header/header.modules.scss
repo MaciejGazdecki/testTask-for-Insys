@@ -1,5 +1,20 @@
+@import "../../../sass/page";
+@import "../../../sass/mixins";
+@import "../../../sass/variables";
+
+
 .header {
   background-image: url("../../../../src/images/nature-3735436_1920.jpg");
   width: 100%;
-  height: 30vh;
+  height: 170px;
+  background-size: cover;
+  @include media-tablet {
+    height: 210px;
+  }
+  @include iPhonexAndPixel2XL-landscape {
+    height: 160px;
+  }
+  @include all-big-screens {
+    height: 250px;
+  }
 }
