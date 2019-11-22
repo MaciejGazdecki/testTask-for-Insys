@@ -6,8 +6,20 @@
 .header {
   background-image: url("../../../../src/images/nature-3735436_1920.jpg");
   width: 100%;
-  height: 170px;
+  height: 130px;
   background-size: cover;
+  @include all-mobiles-m {
+    height: 170px;
+  }
+  @include all-mobiles-l {
+    height: 170px;
+  }
+  @include only-mobiles-landscape-m {
+    height: 130px;
+  }
+  @include only-mobiles-landscape-l {
+    height: 130px;
+  }
   @include media-tablet {
     height: 210px;
   }
