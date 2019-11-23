@@ -3,7 +3,7 @@ import styles from './profile.modules.scss'
 
 function Profile() {
     return (
-        <section>
+        <section className={styles.profile}>
             <div className={styles.container}>
                 <div className={styles.wrapper}>
                     <div className={styles.name}>

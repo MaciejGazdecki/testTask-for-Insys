@@ -11,14 +11,16 @@ import Welcome from "../Components/Welcome/welcome";
 function App () {
     return (
             <Router>
-                <Header/>
-                <Navigation/>
-                <Switch>
-                    <Route path="/" exact component={Welcome}/>
-                    <Route path="/profile" exact component={Profile}/>
-                    <Route path="/gallery" exact component={Gallery}/>
-                    <Route component={NotFound}/>
-                </Switch>
+                <div className={styles.container}>
+                    <Header/>
+                    <Navigation/>
+                    <Switch>
+                        <Route path="/" exact component={Welcome}/>
+                        <Route path="/profile" exact component={Profile}/>
+                        <Route path="/gallery" exact component={Gallery}/>
+                        <Route component={NotFound}/>
+                    </Switch>
+                </div>
             </Router>
     )
 }

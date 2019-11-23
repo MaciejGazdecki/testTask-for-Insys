@@ -1,3 +1,19 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
 .container {
-  margin : 0 3%;
+  @include media-desktop-1680px {
+    border-left: $app-border;
+    border-right: $app-border;
+    border-bottom: $app-border;
+    margin: 0 auto;
+    width: 1400 + ($app-border-width*2);
+  }
+  @include media-desktop-big {
+    border-left: $app-border;
+    border-right: $app-border;
+    border-bottom: $app-border;
+    margin: 0 auto;
+    width: 1500 + ($app-border-width*2);
+  }
 }

@@ -2,9 +2,10 @@
 @import "../../../sass/mixins";
 @import "../../../sass/variables";
 
+
 .container {
   @include container;
-  height: 600px;
+  height: 500px;
   @include only-mobiles-landscape-m {
     height: 400px;
   }

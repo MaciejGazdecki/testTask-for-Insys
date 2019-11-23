@@ -28,6 +28,14 @@
   @include all-big-screens {
     height: 80px;
   }
+  @include media-desktop-1680px {
+    margin: 0 auto;
+    width: 1400px;
+  }
+  @include media-desktop-big {
+    margin: 0 auto;
+    width: 1500px;
+  }
   .container {
     @include container;
     display: flex;
