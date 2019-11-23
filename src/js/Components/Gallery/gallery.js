@@ -50,7 +50,7 @@ function Gallery() {
                         {gallery.slice(6,9).map((image, inx) =>
                             <div key={`${image.title}&${inx}`}
                                  style={{backgroundImage: `url(${image.media.m})`}}
-                                 className={styles.galleryImage}>
+                                 className={`${styles.galleryImage} ${styles.lastRowImages}`}>
                                 <a href={image.link} target="_blank"></a>
                             </div>
                         )}
