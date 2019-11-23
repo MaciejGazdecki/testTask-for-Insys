@@ -35,7 +35,7 @@
   }
 }
 @mixin media-desktop-1680px {
-  @media screen and (min-width: 1281px) {
+  @media screen and (min-width: 1281px) and (max-width: 1680px){
     @content
   }
 }

@@ -12,7 +12,7 @@ module.exports = {
     devServer: {
         contentBase: "./dist",
         port:8080,
-        host:"192.168.1.65",
+        host:"0.0.0.0",
     },
     devtool: "source-map",
     plugins: [
