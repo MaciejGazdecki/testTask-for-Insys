@@ -23,7 +23,6 @@ function Gallery() {
            .catch(err => console.log(err, 'Jest błąd'))
 
     });
-    console.log(gallery);
     return (
         <section>
             <div className={styles.container}>
