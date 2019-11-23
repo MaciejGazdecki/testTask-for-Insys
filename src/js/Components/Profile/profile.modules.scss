@@ -5,12 +5,13 @@
 
 .container {
   @include container;
-  height: 500px;
-  @include only-mobiles-landscape-m {
-    height: 400px;
+  margin-bottom: 30px;
+  height: 100%;
+  @include media-desktop-1680px {
+    margin-bottom: 80px;
   }
-  @include only-mobiles-landscape-l {
-    height: 400px;
+  @include media-desktop-big {
+    margin-bottom: 80px;
   }
 }
 .wrapper {
