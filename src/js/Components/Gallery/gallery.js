@@ -22,7 +22,7 @@ function Gallery() {
            .then(obj => setGallery(obj.items))
            .catch(err => console.log(err, 'Jest błąd'))
 
-    });
+    },[]);
     console.log(gallery);
     return (
         <section>
@@ -33,7 +33,7 @@ function Gallery() {
                             <div key={`${image.title}&${inx}`}
                                  style={{backgroundImage: `url(${image.media.m})`}}
                                  className={styles.galleryImage}>
-                                <a href={image.link} target="_blank" rel="noopener noreferrer"></a>
+                                <a href={image.link} target="_blank"></a>
                             </div>
                         )}
                     </div>
@@ -42,7 +42,7 @@ function Gallery() {
                             <div key={`${image.title}&${inx}`}
                                  style={{backgroundImage: `url(${image.media.m})`}}
                                  className={styles.galleryImage}>
-                                <a href={image.link} target="_blank" rel="noopener noreferrer"></a>
+                                <a href={image.link} target="_blank"></a>
                             </div>
                         )}
                     </div>
@@ -51,7 +51,7 @@ function Gallery() {
                             <div key={`${image.title}&${inx}`}
                                  style={{backgroundImage: `url(${image.media.m})`}}
                                  className={`${styles.galleryImage} ${styles.lastRowImages}`}>
-                                <a href={image.link} target="_blank" rel="noopener noreferrer"></a>
+                                <a href={image.link} target="_blank"></a>
                             </div>
                         )}
                     </div>
